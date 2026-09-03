@@ -31,4 +31,13 @@ def add_num():
         add_list.append(num)
     total = sum(add_list)
     print(f"Your total sum: {total}")
-add_num()
+# add_num()
+
+def sumOfList(n):
+    numbers = []
+    for i in range(n):
+        num = float(input(f"Enter your number {i+1} : "))
+        numbers.append(num)
+    return sum(numbers) 
+n = int(input("Enter how many number you are input : "))
+print(f"total sum: {sumOfList(n)}")
